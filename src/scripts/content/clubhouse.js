@@ -8,7 +8,7 @@ togglbutton.render('.story-state:not(.toggl)', { observe: true }, function (
   elem = elem.parentNode.parentNode.parentNode;
 
   const getDescription = function () {
-    return 'ch' + document.getElementsByClassName('clipboard')[1].value + ' ' + $('h2.story-name', elem).textContent;
+    return 'ch' + document.getElementsByClassName('clipboard')[0].value + ' ' + $('h2.story-name', elem).textContent;
   };
   // comment
   const getProject = function () {
