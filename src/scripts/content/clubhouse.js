@@ -8,9 +8,12 @@ togglbutton.render('.story-state:not(.toggl)', { observe: true }, function (
   elem = elem.parentNode.parentNode.parentNode;
 
   const getDescription = function () {
-    return 'ch' + document.getElementsByClassName('clipboard')[0].value + ' ' + $('h2.story-name', elem).textContent;
+    // very limited, will easily break, don't even try to do anything fancy here
+    // you need to find the story number in one statement
+
+    return 'ch' + document.querySelectorAll('[id*=story-id]')[0].value + ' ' + $('h2.story-name', elem).textContent;
   };
-  // comment
+
   const getProject = function () {
     return $('.story-project .value', elem).textContent;
   };
