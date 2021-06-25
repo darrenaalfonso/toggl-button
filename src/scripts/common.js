@@ -659,13 +659,13 @@ window.togglbutton = {
     }
 
     togglbutton.deactivateAllTimerLinks();
-    link.classList.add('active');
-    link.style.color = '#1ab351';
+    // link.classList.add('active');
+    // link.style.color = '#1ab351';
 
-    const isMinimal = link.classList.contains('min');
-    if (!isMinimal) {
-      setLinkText(link, 'Stop timer');
-    }
+    // const isMinimal = link.classList.contains('min');
+    // if (!isMinimal) {
+    //   setLinkText(link, 'Stop timer');
+    // }
   },
 
   deactivateAllTimerLinks: function () {
